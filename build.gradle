@@ -10,7 +10,7 @@ repositories {
 //    mavenLocal()
     mavenCentral()
     maven {
-        url 'https://repo.opencollab.dev/main'
+        url 'https://repo.opencollab.dev/maven-snapshots'
     }
     maven {
         url 'https://oss.sonatype.org/content/repositories/snapshots'
@@ -30,8 +30,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
 
-    compileOnly 'org.geysermc.geyser:api:2.4.1-SNAPSHOT'
-    compileOnly('org.geysermc.geyser:core:2.4.1-SNAPSHOT') {
+    compileOnly 'org.geysermc.geyser:api:2.4.1'
+    compileOnly('org.geysermc.geyser:core:2.4.1') {
         exclude group: 'io.netty'
         exclude group: 'io.netty.incubator'
     }
