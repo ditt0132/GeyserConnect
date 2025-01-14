@@ -41,8 +41,11 @@ dependencies {
     compileOnly('org.geysermc.geyser:core:2.4.1-SNAPSHOT') {
         exclude group: 'io.netty'
         exclude group: 'io.netty.incubator'
+        exclude group: 'net.raphimc'
     }
 
+    
+    implementation 'net.raphimc:MinecraftAuth:4.1.1'
     implementation 'org.xerial:sqlite-jdbc:3.46.0.0'
     implementation 'com.mysql:mysql-connector-j:9.0.0'
 }
